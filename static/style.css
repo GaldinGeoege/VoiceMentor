@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(133, 194, 141, 1) 48%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.heading h1 {
+  font-family: "Kanit", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+form .select-gender label {
+  font-family: "Roboto Mono", monospace;
+}
+form .select-gender select {
+  padding: 0.2rem;
+  border: none;
+}
+form .select-gender select:focus-visible {
+  outline: none;
+}
+form  textarea {
+  background-color: #212121;
+  /* max-width: 190px;
+  height: 40px; */
+  padding: 10px;
+  /* text-align: center; */
+  border: 2px solid white;
+  border-radius: 5px;
+  color: rgb(0, 255, 255);
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+form  textarea:focus-visible {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+button {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
+
+button svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+button:hover span {
+  transform: translateX(7px);
+}
