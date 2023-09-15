@@ -3,4 +3,4 @@ Jinja2==3.1.2
 flask_cors==4.0.0
 gunicorn==21.2.0
 pyttsx3==2.90
-libespeak.so.1.1.48
+libespeak==1.1.48
